@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('to_dos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->content();
-            $table->completed();
-            $table->priority();
+            $table->text('content'); 
+            $table->boolean('completed')->default(false); 
+            $table->string('priority');
+            $table->timestamps(); 
         });
     }
 
@@ -27,7 +27,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('to_dos');
     }
-
-
-    
 };

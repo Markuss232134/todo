@@ -19,7 +19,7 @@ class ToDoFactory extends Factory
         return [
         "content" => $this->faker->sentence(5),
         "completed" => $this->faker->boolean(),
-        "priority" => $this->faker->randomElement(['low', 'medium', 'high']) // konkrētas 
+        "priority" => $this->faker->randomElement(['low', 'medium', 'high']),
         ];
     }
 }
