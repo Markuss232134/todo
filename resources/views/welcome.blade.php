@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<<, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="Main">Sveiks, Laravel!</h1>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <h1>Laipni lūgti Todo projektā!</h1>
+    <p>Pieslēdzieties vai reģistrējieties, lai sāktu veidot savus uzdevumus un dienasgrāmatas ierakstus.</p>
+@endsection
